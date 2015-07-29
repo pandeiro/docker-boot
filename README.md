@@ -21,6 +21,7 @@ docker pull pandeiro/boot
 
 ```bash
 docker run \
+    -v $HOME/.boot:/.boot \
     -v $HOME/.m2/repository:/m2 \
     -v $(pwd):/app \
     -p 8080:8080 \

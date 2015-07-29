@@ -20,8 +20,10 @@ RUN mkdir /app
 WORKDIR /app
 VOLUME ["/app"]
 
+ENTRYPOINT ["boot"]
+
 #
 # Usage:
 #
-#     docker run -v $(pwd):/app -v ~/.m2:/m2 -v ~/.boot:/.boot pandeiro/boot boot run
+#     docker run -v $(pwd):/app -v ~/.m2:/m2 -v ~/.boot:/.boot pandeiro/boot run
 #

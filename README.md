@@ -25,7 +25,7 @@ docker run \
     -v $(pwd):/app \
     -p 8080:8080 \
     pandeiro/boot \
-    boot <my-run-task>
+    <my-run-task>
 ```
 
 ## License

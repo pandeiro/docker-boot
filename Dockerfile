@@ -2,8 +2,12 @@ FROM pandeiro/oracle-jdk8:latest
 MAINTAINER Murphy McMahon <pandeiro.docker@gmail.com>
 
 # Get Boot
-RUN wget -O /usr/bin/boot \
-    https://github.com/boot-clj/boot/releases/download/2.1.2/boot.sh \
+RUN apt-get update \
+    && apt-get install -y curl
+
+RUN curl -s https://api.github.com/repos/boot-clj/boot/releases \
+    | grep 'download_url.*boot\.sh' | head -1 |sed 's@^.*[:] @wget -O /usr/bin/boot @' \
+    | bash \
     && chmod +x /usr/bin/boot
 
 # Config Boot to run as root and use maven cache

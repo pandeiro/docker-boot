@@ -3,7 +3,7 @@ MAINTAINER Murphy McMahon <pandeiro.docker@gmail.com>
 
 # Get Boot
 RUN wget -O /usr/bin/boot \
-    https://github.com/boot-clj/boot/releases/download/2.0.0-rc11/boot.sh \
+    https://github.com/boot-clj/boot/releases/download/2.1.2/boot.sh \
     && chmod +x /usr/bin/boot
 
 # Config Boot to run as root and use maven cache

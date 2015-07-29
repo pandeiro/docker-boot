@@ -21,11 +21,11 @@ docker pull pandeiro/boot
 
 ```bash
 docker run \
-    -v $HOME/.m2:/m2 \
+    -v $HOME/.m2/repository:/m2 \
     -v $(pwd):/app \
     -p 8080:8080 \
     pandeiro/boot \
-    boot my-run-task
+    boot <my-run-task>
 ```
 
 ## License

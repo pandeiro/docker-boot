@@ -29,5 +29,5 @@ ENTRYPOINT ["boot"]
 #
 # Usage:
 #
-#     docker run -v $(pwd):/app -v ~/.m2:/m2 -v ~/.boot:/.boot pandeiro/boot run
+#     docker run -v $(pwd):/app -v ~/.m2/repository:/m2 -v ~/.boot:/.boot pandeiro/boot run
 #

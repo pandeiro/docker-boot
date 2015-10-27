@@ -11,10 +11,11 @@ RUN wget --quiet -O /usr/bin/boot https://github.com/boot-clj/boot/releases/down
 ENV BOOT_AS_ROOT yes
 ENV BOOT_LOCAL_REPO /m2
 ENV BOOT_HOME /.boot
+ENV BOOT_VERSION 2.3.0
 
 # Run `boot` a first time and cache everything in /m2
 RUN mkdir /m2
-RUN boot -d boot:2.3.0 -vv
+RUN boot -vv
 
 # Mount applications in /app
 RUN mkdir /app

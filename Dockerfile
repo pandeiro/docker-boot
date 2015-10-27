@@ -4,7 +4,7 @@ MAINTAINER Murphy McMahon <pandeiro.docker@gmail.com>
 # Get Boot
 RUN apt-get update
 
-RUN wget -O /usr/bin/boot https://github.com/boot-clj/boot/releases/download/2.3.0/boot.sh \
+RUN wget --quiet -O /usr/bin/boot https://github.com/boot-clj/boot/releases/download/2.3.0/boot.sh \
     && chmod +x /usr/bin/boot
 
 # Config Boot to run as root and use maven cache

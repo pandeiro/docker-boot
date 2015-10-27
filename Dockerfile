@@ -2,8 +2,7 @@ FROM pandeiro/oracle-jdk8:8u66
 MAINTAINER Murphy McMahon <pandeiro.docker@gmail.com>
 
 # Get Boot
-RUN apt-get update \
-    && apt-get install -y curl
+RUN apt-get update
 
 RUN wget -O /usr/bin/boot https://github.com/boot-clj/boot/releases/download/2.3.0/boot.sh
     && chmod +x /usr/bin/boot

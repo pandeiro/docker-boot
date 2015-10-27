@@ -14,7 +14,7 @@ ENV BOOT_HOME /.boot
 
 # Run `boot` a first time and cache everything in /m2
 RUN mkdir /m2
-RUN boot -vv
+RUN boot -d boot:2.3.0 -vv
 
 # Mount applications in /app
 RUN mkdir /app

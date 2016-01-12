@@ -4,14 +4,14 @@ MAINTAINER Murphy McMahon <pandeiro.docker@gmail.com>
 # Get Boot
 RUN apt-get update
 
-RUN wget --quiet -O /usr/bin/boot https://github.com/boot-clj/boot/releases/download/2.3.0/boot.sh \
+RUN wget --quiet -O /usr/bin/boot https://github.com/boot-clj/boot-bin/releases/download/2.5.2/boot.sh \
     && chmod +x /usr/bin/boot
 
 # Config Boot to run as root and use maven cache
 ENV BOOT_AS_ROOT yes
 ENV BOOT_LOCAL_REPO /m2
 ENV BOOT_HOME /.boot
-ENV BOOT_VERSION 2.3.0
+ENV BOOT_VERSION 2.5.5
 
 # Run `boot` a first time and cache everything in /m2
 RUN mkdir /m2

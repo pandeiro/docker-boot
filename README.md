@@ -1,7 +1,7 @@
 # Boot Docker Image
 
-A Boot image based on Debian Wheezy and
-[Oracle JDK8](https://github.com/pandeiro/docker-oracle-jdk8).
+A Boot image based on the official Alpine /
+[OpenJDK 8](https://hub.docker.com/_/java/) image.
 
 ## Build
 

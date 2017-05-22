@@ -15,7 +15,7 @@ RUN curl -L -o /usr/bin/boot \
 ENV BOOT_AS_ROOT yes
 ENV BOOT_LOCAL_REPO /m2
 ENV BOOT_HOME /.boot
-ENV BOOT_VERSION 2.6.0
+ENV BOOT_VERSION 2.7.1
 ENV BOOT_EMIT_TARGET no
 
 # Run `boot` a first time and cache everything in /m2

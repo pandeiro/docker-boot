@@ -25,7 +25,7 @@ docker run \
     -v $HOME/.m2/repository:/m2 \
     -v $(pwd):/app \
     -p 8080:8080 \
-    pandeiro/boot \
+    pandeiro/boot:2.7.1 \
     <my-run-task>
 ```
 

@@ -1,4 +1,4 @@
-FROM java:openjdk-8u92-jre-alpine
+FROM java:openjdk-8u111-jre-alpine
 MAINTAINER Murphy McMahon <pandeiro.docker@gmail.com>
 
 # Get Boot

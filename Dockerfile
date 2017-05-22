@@ -8,7 +8,7 @@ RUN apk --update upgrade && \
     rm -rf /var/cache/apk/*
 
 RUN curl -L -o /usr/bin/boot \
-    https://github.com/boot-clj/boot-bin/releases/download/2.5.2/boot.sh \
+    https://github.com/boot-clj/boot-bin/releases/download/latest/boot.sh \
     && chmod +x /usr/bin/boot
 
 # Config Boot to run as root and use maven cache

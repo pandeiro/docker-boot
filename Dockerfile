@@ -25,7 +25,6 @@ RUN boot -vv && boot repl --server
 # Mount applications in /app
 RUN mkdir /app
 WORKDIR /app
-VOLUME ["/app"]
 
 ENTRYPOINT ["boot"]
 
